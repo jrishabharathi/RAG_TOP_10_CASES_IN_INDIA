@@ -26,6 +26,14 @@ PDF_FOLDER = Path("datafiles_docs")
 
 st.markdown("""
 <style>
+[data-testid="stAppViewContainer"] {
+    background-color: #eff8ff;
+}
+
+[data-testid="stSidebar"] {
+    background-color: #dceeff;
+}
+
 [data-testid="stSidebar"] {
     min-width: 260px;
     max-width: 260px;
