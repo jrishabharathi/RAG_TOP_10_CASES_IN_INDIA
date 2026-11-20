@@ -34,6 +34,26 @@ st.markdown("""
     background-color: #dceeff;
 }
 
+/* Keep text readable when the user's Streamlit theme is dark. */
+[data-testid="stAppViewContainer"],
+[data-testid="stAppViewContainer"] p,
+[data-testid="stAppViewContainer"] li,
+[data-testid="stAppViewContainer"] h1,
+[data-testid="stAppViewContainer"] h2,
+[data-testid="stAppViewContainer"] h3,
+[data-testid="stAppViewContainer"] label,
+[data-testid="stSidebar"],
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] li,
+[data-testid="stSidebar"] label {
+    color: #17324d;
+}
+
+/* Match Streamlit's fixed chat input area to the light page. */
+[data-testid="stBottom"] {
+    background-color: #eff8ff;
+}
+
 [data-testid="stSidebar"] {
     min-width: 260px;
     max-width: 260px;
