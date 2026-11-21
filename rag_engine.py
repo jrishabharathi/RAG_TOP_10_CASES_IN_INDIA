@@ -17,7 +17,7 @@ def load_pdf(pdf_path):
         for page in reader.pages
     ]
 
-    full_text = "\n".join(mypages).strip()
+    full_text = "\n".join(mypages).strip()  #join every pages and removes the blank spaces 
 
     if not full_text:
         raise ValueError(
